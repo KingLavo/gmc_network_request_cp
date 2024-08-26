@@ -1,0 +1,99 @@
+.flex{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+body{
+    background-color: #F5F5F5;
+    color: #525252;
+    flex-direction: column;
+}
+.container{
+    width: 35%;
+    padding: 1rem .6rem;
+    min-height: 100vh;
+    box-shadow: 3px 4px 4px 3px gainsboro;
+    border-radius: .8rem;
+}
+.container .header{
+    text-align: center;
+    font-weight: bolder;
+    color: #525252;
+    margin: 1.7rem;
+    text-shadow: 3px 4px 2px #525252; 
+}
+.container .form{
+    width: 85%;
+    padding: .7rem 10px;
+    margin: 2.7rem auto;
+    border-radius: 20px;
+    box-shadow: 4px 3px 4px 3px gainsboro;    
+}
+.container .form input{
+    width: 85%;
+    padding: 5px 16px;
+    display: block;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: #525252;
+    text-transform: capitalize;
+} 
+.container .searchResult{
+    width: 90%;
+    margin: 1rem auto ;
+}
+.searchResult .location{
+    width: 50%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.searchResult .location h1{
+    text-transform: capitalize;
+}
+.searchResult .weatherCon {
+     flex-direction: column;  
+}
+.searchResult .weatherCon img{
+    filter: drop-shadow( 30px 20px 50px #525252);
+    width: 170px;
+}
+.details .temp, .desc{
+    text-align: center;
+    color: rgba(240, 62, 7, 0.952);
+    font-weight: bolder;
+    width: 60%;
+    margin: 0 auto;
+}
+.details .temp h1 i, span, sup{
+    margin: 5px;
+}
+ 
+@media screen and (max-width: 670px){
+    .container{
+        width: 95%;
+        padding: .5rem;
+    }
+    .container h1{
+        margin: 1rem;
+    }
+    .container .form, .container .form input{
+        width: 80%;
+        padding: 0 9px;
+        margin: 2.6rem auto;
+    }
+    .container .form{
+        max-height: 40px;
+        margin-bottom: 2rem;
+    }
+    .container .form input{
+        padding: 9px;
+    }
+    .container .searchResult{
+        width: 100%;
+    }
+    .searchResult .location{
+        width: 100%;
+        justify-content: space-evenly;
+    }
+}

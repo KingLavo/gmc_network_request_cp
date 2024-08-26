@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles.css">
+    <title>NetworkReQuest</title>
+</head>
+<body class="flex">
+    <div class="container">
+        <h1 class="header">Weather App</h1>
+        <form class="form flex" autocomplete="off">
+            <input type="text" placeholder="serach your city" id="inputVal">
+            <i class="fa-solid fa-magnifying-glass-location"></i>
+        </form>
+        <!-- //  temperature, description, and location. --> 
+        <div class="searchResult" id="result">
+            <div class="location flex">
+                <h2 id="location">Lagos</h2>
+                <img id="locationImg" src="https://flagsapi.com/NG/flat/64.png" class="flagImg">
+            </div>
+            <secttion class="weatherCon flex">
+                <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="" id="weatherIcon">
+            </secttion>
+            <div class="details"> 
+                <div class="temp">
+                    <h1>
+                        <i class="fa-solid fa-temperature-three-quarters"></i>
+                        <span id="temp">29.7</span><sup>oc</sup>
+                    </h1>
+                </div>
+                <div class="desc">
+                    <h5>
+                        <i class="fa-solid fa-audio-description">:</i>
+                        <span id="weatherDesc">lightly rainning</span>
+                    </h5>
+                </div>
+            </div>
+            
+           
+        </div>
+    </div>
+    <!-- 
+    read about figure tag and figcaption tag(html tags)
+     -->
+    <script src="./script.js"></script>
+</body>
+</html>
